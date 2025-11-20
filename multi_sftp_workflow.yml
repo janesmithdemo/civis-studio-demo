@@ -3,6 +3,9 @@ workflow:
   tasks:
     SFTP_MULTI:
       action: civis.run_job
+      retry:
+        count: 1
+        delay: 5
       input:
         job_id: 318037921
       on-success: Load_FILES_TO_TABLES
