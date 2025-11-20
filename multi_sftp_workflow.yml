@@ -1,0 +1,12 @@
+version: '2.0'
+workflow:
+  tasks:
+    SFTP_MULTI:
+      action: civis.run_job
+      input:
+        job_id: 318037921
+      on-success: Load_FILES_TO_TABLES
+    Load_FILES_TO_TABLES:
+      action: civis.run_job
+      input:
+        job_id: 318793178
