@@ -11,5 +11,8 @@ workflow:
       on-success: Load_FILES_TO_TABLES
     Load_FILES_TO_TABLES:
       action: civis.run_job
+      retry:
+        count: 1
+        delay: 5
       input:
         job_id: 318793178
