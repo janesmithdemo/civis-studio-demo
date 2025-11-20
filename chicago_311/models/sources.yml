@@ -1,0 +1,87 @@
+version: 2
+sources:
+  - name: chicago
+    database: dev
+    schema: chicago
+    tables:
+      - name: chicago_311_data
+        description: "Chicago 311 service request data."
+        columns:
+          - name: sr_number
+            description: "Service request number. Primary key."
+          - name: sr_type
+            description: "Type of service request."
+          - name: sr_short_code
+            description: "Short code for service request type."
+          - name: created_department
+            description: "Department that created the request."
+          - name: owner_department
+            description: "Department that owns the request."
+          - name: status
+            description: "Status of the request."
+          - name: origin
+            description: "Origin of the request."
+          - name: created_date
+            description: "Date the request was created."
+          - name: last_modified_date
+            description: "Date the request was last modified."
+          - name: closed_date
+            description: "Date the request was closed."
+          - name: street_address
+            description: "Street address for the request."
+          - name: city
+            description: "City."
+          - name: state
+            description: "State."
+          - name: zip_code
+            description: "Zip code."
+          - name: street_number
+            description: "Street number."
+          - name: street_direction
+            description: "Street direction."
+          - name: street_name
+            description: "Street name."
+          - name: street_type
+            description: "Street type."
+          - name: duplicate
+            description: "Is this a duplicate record?"
+          - name: legacy_record
+            description: "Is this a legacy record?"
+          - name: legacy_sr_number
+            description: "Legacy service request number."
+          - name: parent_sr_number
+            description: "Parent service request number."
+          - name: community_area
+            description: "Community area."
+          - name: ward
+            description: "Ward."
+          - name: electrical_district
+            description: "Electrical district."
+          - name: electricity_grid
+            description: "Electricity grid."
+          - name: police_sector
+            description: "Police sector."
+          - name: police_district
+            description: "Police district."
+          - name: police_beat
+            description: "Police beat."
+          - name: precinct
+            description: "Precinct."
+          - name: sanitation_division_days
+            description: "Sanitation division days."
+          - name: created_hour
+            description: "Hour the request was created."
+          - name: created_day_of_week
+            description: "Day of week the request was created."
+          - name: created_month
+            description: "Month the request was created."
+          - name: x_coordinate
+            description: "X coordinate."
+          - name: y_coordinate
+            description: "Y coordinate."
+          - name: latitude
+            description: "Latitude."
+          - name: longitude
+            description: "Longitude."
+          - name: location
+            description: "Location."
